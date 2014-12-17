@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Homework: boot xv6</title>
+<link rel="stylesheet" href="homework.css" type="text/css" />
+</head>
+<body>
+
+<h1>Homework: boot xv6</h1>
+
+<p>Submit your solutions before the beginning of the next lecture to the <a
+ href="https://ccutler.scripts.mit.edu/6.828/handin.py/">submission web site</a>.
+
+<h2>Boot xv6</h2>
+Fetch the xv6 source:
+
+<pre>
+$ mkdir 6.828
+$ cd 6.828
+$ git clone git://pdos.csail.mit.edu/xv6/xv6.git
+Cloning into xv6...
+...
+$
+</pre>
+
+Build xv6 on Athena (e.g., ssh -X athena.dialup.mit.edu):
+<pre>
+$ add -f 6.828
+$ cd xv6
+$ make
+...
+gcc -O -nostdinc -I. -c bootmain.c
+gcc -nostdinc -I. -c bootasm.S
+ld -m    elf_i386 -N -e start -Ttext 0x7C00 -o bootblock.o bootasm.o bootmain.o
+objdump -S bootblock.o > bootblock.asm
+objcopy -S -O binary -j .text bootblock.o bootblock
+...
+$ 
+</pre>
+
+<p>If you are not using Athena for 6.828 JOS labs, but build on your own
+machine, see the instructions on <a href="../tools.html">the tools page</a>.  If
+you have a build infrastructure on your own machine for lab 1, then you should
+be able to use that infrastructure for building xv6 too.
+
+<h2>Finding and breaking at an address</h2>
+
+Find the address of <code>_start</code>, the entry point of the kernel:
+<pre>
+$ nm kernel | grep _start
+8010b50c D _binary_entryother_start
+8010b4e0 D _binary_initcode_start
+0010000c T _start
+</pre>
+In this case, the address is <code>0010000c</code>.
+
+<p>
+Run the kernel inside QEMU GDB, setting a breakpoint
+at <code>_start</code> (i.e., the address
+you just found).
+</p>
+
+<pre>
+$ make qemu-gdb
+...
+$ gdb
+GNU gdb 6.8-debian
+Copyright (C) 2008 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
++ target remote localhost:26000
+The target architecture is assumed to be i8086
+[f000:fff0]    0xffff0:	ljmp   $0xf000,$0xe05b
+0x0000fff0 in ?? ()
++ symbol-file kernel
+(gdb) br * 0x0010000c
+Breakpoint 1 at 0x10000c
+(gdb) c
+Continuing.
+The target architecture is assumed to be i386
+=> 0x10000c:	mov    %cr4,%eax
+
+Breakpoint 1, 0x0010000c in ?? ()
+(gdb)
+</pre>
+
+The details of what you see are likely to differ from the above output.
+
+<h2>Exercise: What is on the stack?</h2>
+
+Look at the registers and the stack contents:
+
+<pre>
+(gdb) info reg
+...
+(gdb) x/24x $esp
+...
+(gdb)
+</pre>
+
+<p>Write a short (3-5 word) comment next to each non-zero value on the stack
+explaining what is.  Which part of the stack printout is actually the stack?
+(Hint: not all of it.)
+
+<p>You might find it convenient to consult the files bootasm.S, bootmain.c,
+and bootblock.asm (which contains the output of the compiler/assembler).
+The <a href="../reference.html">reference page</a> has pointers to x86 assembly
+documentation, if you are wondering about the semantics of a particular
+instruction.  Here are some questions to help you along:
+
+<ul>
+
+<li>Start by setting a break-point at 0x7c00, the start of the boot
+  block (bootasm.S). Single step
+  through the instructions (type si to the gdb prompt). Where in bootasm.S is
+  the stack pointer initialized?
+
+<li>Single step through the call to <tt>bootmain</tt>; what is on the stack now?
+
+<li>What do the first <it>assembly</it> instructions of bootmain do to the
+stack? Look for bootmain in bootblock.asm.
+
+<li>Look in bootmain in bootblock.asm for the call that changes <tt>eip</tt> to
+  </tt>0x10000c</tt>.  What does that call do to the stack?
+  
+</ul>
+
+<div class="question">
+<p><b>Submit</b>: The output of <tt>x/24x $esp</tt> with 
+the valid part of the stack marked plus your comments..</p>
+</div>
+
+
+</body>
+</html>

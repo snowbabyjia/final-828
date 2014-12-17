@@ -1,0 +1,60 @@
+This is an electronic review form. Almost *everything* in the form is
+significant and shouldn't be fussed with.
+
+
+			SOCS96  Referee's Report
+
+             Please return this report to kaashoek@mit.edu by Dec 9
+
+
+Paper Number:
+
+Paper Title:
+
+_____________________________________________________________________
+Place a number for each item below corresponding to your evaluation.
+(5=outstanding, 4=high, 3=medium, 2=fair, 1=poor)
+
+Confidence in your evaluation: 
+
+Interest/Importance to SOCS: 
+
+Quality of presentation:
+
+Technical contribution of paper: 
+_____________________________________________________________________
+(5=strong accept, 4=accept, 3=maybe, 2=reject, 1=strong reject)
+
+Recommended action for paper:
+_____________________________________________________________________
+
+Regardless of the recommendations, please state specific comments and
+suggestions that can be communicated to the author(s):
+
+
+
+
+
+
+
+
+
+====================================================================
+
+Comments on this paper for the Program Committee, TO BE WITHHELD FROM
+THE AUTHOR(S):
+
+
+
+
+
+
+
+---------------------------------------------------------------------------
+
+Referee's name: 
+
+Referee's affiliation:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+

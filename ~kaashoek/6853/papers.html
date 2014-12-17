@@ -1,0 +1,412 @@
+<!doctype html public "-//IETF//DTD HTML 3.0//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>6.853 Readings</title></head>
+
+<body>
+
+<h1>6.853 Readings</h1>
+
+<p>For each class meeting one hard-core technical paper is assigned.  In
+addition, some background reading is suggested.  You are expected to read the
+paper assigned in preparation of the class meeting.  The student who presents
+the paper is also required to do some of the background reading. Other students
+are strongly encouraged to do at least a cursory read of the background
+material.<br>
+
+<P> Electronic versions are linked where available; see the course secretary for
+paper copies. We will try to handout hardcopies of the assigned reading a week
+in advance in class. <br>
+
+
+<h2>September 4</h2>
+
+<ul>
+
+<li>1. How to Referee a Research Paper (Dave Gifford, February 1982)
+
+<li>2. <EM>Rules for Referees</EM><BR> Bernard K. Forscher, reprinted
+from SCIENCE, Vol. 150, pp 319-321, October 1965.
+
+</ul>
+
+Another good piece of advice on what is a good paper is Roy Levin's and David
+D. Redell's <em>An evaluation of the ninth SOSP submissions, or how (and how
+not) to write a good systems paper</em>. Operating Systems Review 17, 3 (July,
+1983) pages 35-40.<br> 
+
+
+<h2>September 9</h2>
+
+<ul>
+
+<li>3. <EM>The MIT Alewife Machine: Architecture and Performance</EM> (<A
+HREF="ftp://cag.lcs.mit.edu/pub/papers/isca95.ps.Z">.ps.Z</A>)<BR>
+Anant Agarwal and others, December 1994.  Abbreviated version to
+appear in ISCA '95.<br>
+
+</ul>
+
+<p>For background read <em>Computer Architecture: a quantative approach (2nd
+ed)</em>, by Hennesey and Patterson, Morgan Kaufmann publishers.
+
+<h2>September 11</h2>
+
+<ul>
+
+<li>4. <em><a href="http://www-flash.stanford.edu/~aje/asplos96.ps">SoftFLASH: Analyzing the Performance of Clustered Distributed Virtual
+Shared Memory</em></a><br>
+Andrew Erlichson: Stanford University, Neal Nuckolls, Greg Chesson: Silicon
+Graphics, Inc. and John Hennessy: Stanford University. This paper
+will appear in ASPLOS-VII, October, 1996.<br>
+</ul>
+
+<p>For additional motivation behind this paper checkout the <a
+href="http://now.cs.berkeley.edu">Network of Workstation project.</a> In
+particular, <a href="http://now.cs.berkeley.edu/Case/case.html">The case for
+NOW</a>.<br>
+
+<h2>September 16</h2>
+
+<ul>
+
+<LI>5. <a
+href="ftp://www-flash.stanford.edu/pub/hive/SOSP95-oschar.ps"><EM>The Impact
+of Architectural Trends on Operating System Performance</EM></a>
+M. Rosenblum, E. Bugnion, S. A. Herrod, E. Witchel, and A. Gupta
+(Stanford). This paper appeared in SOSP-15, Dec. 1995.<br>
+
+</ul>
+
+<p>This paper uses the SimOS environment for simulating the architectural
+trends. <a href="http://www-flash.stanford.edu:80/Embra/">Embra</a> is the key
+component of the system that makes the SimOS environment fast enough so that
+real systems can be simulated.  Since this paper is all about modern
+uniprocessors and multiprocessors, it might be helpful to check out <em>Computer
+Architecture: a quantative approach (2nd ed)</em>, by Hennesey and Patterson,
+Morgan Kaufmann publishers.<br>
+
+<p>Another interesting performance study is <a
+href="http://www.das.harvard.edu/users/faculty/Brad_Chen/ftp/p5.ps"><EM> The
+Measured Performance of Personal Computer Operating Systems</EM></a>
+J.B. Chen, Y. Endo, K. Chan, D. Mazieres, A. Dias, M. Seltzer, M.D.
+Smith (Harvard). It uses the performance counters of the Pentium to study
+applications running on NetBSD, Windows95, Windows/NT.<br>
+
+<h2>September 18</h2>
+
+<ul>
+
+<LI>6. <a
+href="http://www.pdos.lcs.mit.edu/papers/exokernel-sosp95.ps"><EM>Exokernel: An
+Operating System Architecture for Application-Level Resource Management</EM></a>
+D.R. Engler, M.F. Kaashoek and J. O'Toole, Jr. (MIT Lab for Computer Science)
+This paper appeared in SOSP-15, Dec. 1995.<br>
+
+</ul>
+
+<p>There is quite a bit of current discussion on what an appropriate
+organization for an operating system is.  This paper discusses one
+approach. Next week's paper discusses yet another approach.  The <a
+href="http://borneo.gmd.de/RS/L4/sosp95.ps"><EM>On Micro-Kernel
+Construction</EM></a> paper, which also appeared in SOSP-15, argues the
+microkernel organization is just fine; one has to implement them right.<br>
+
+<h2>September 25</h2>
+
+<ul>
+
+<li>7.<a
+href="http://www.cs.washington.edu/research/projects/spin/www/papers/SOSP95/sosp95.ps"><em>Extensibility,
+Safety and Performance in the SPIN Operating System.</EM></a> Brian N. Bershad,
+Stefan Savage, Przemyslaw Pardyak, Emin G&#252;n Sirer, Marc Fiuczynski, David
+Becker, Susan Eggers, Craig Chambers.  (Department of Computer Science and
+Engineering, University of Washington).
+
+</ul>
+
+</p>The SPIN paper discusses yet another approach to obtaining flexibility.  The
+SPIN approach relies on downloading user modules written in a type-safe
+language into the operating system kernel. Checkout <a <a
+href="http://www.cs.washington.edu/research/projects/spin/www/index.html">the
+SPIN page</a> for more info.  A related paper that investigates the type-safe
+languages for operating systems is <em>Pilot: an operating system for
+a personal computer</em>, by David D. Redell, Yogen K. Dalal, Thomas R. Horsley,
+Hugh C. Lauer, William C. Lynch, Paul R. McJones, Hal g. Murray, and Stephen
+C. Purcell, which appeared in Communications of the ACM, vol 23, no 2,
+February 1980, pages 81-92.
+
+
+<h2>September 30</h2>
+
+<ul>
+
+<li>8. <em>High speed switching scheduling for local area networks</em>
+T. Anderson, S. Owicki, J. Saxe, and C. Thacker. ASPLOS-V, Sept. 1992,
+pp. 98-110. Only available in hardcopy. <br>
+
+</ul>
+
+<p>This paper discusses the design and implementation of a switch for an
+ATM-style network.  Another good paper that describes a complete ATM-like
+network is Rodeheffer, Edwin H. Satterthwaite, and Charles P. Thacker. Autonet:
+A high-speed, self-configuring local area network using point-to-point
+Links. IEEE Journal on Selected Areas in Communications 9, 8, (October 1991)
+pages 1318-1335. If you haven't read the Ethernet paper, you should read it:
+Robert M. Metcalfe and David R. Boggs. Ethernet: Distributed packet switching
+for local computer networks. Communications of the ACM 19, 7 (July, 1976) pages
+395-404.<br>
+
+<p>Some papers about ATM are: ATM Concepts, Architectures, and Protocols Ronald
+J. Vetter ATM Network: Goals and Challenges and B. G. Kim and P. Wang
+Communications of the ACM, Vol. 38, No. 2, February 1995.<br>
+
+<h2>October 2</h2>
+<ul>
+<li>9. <a
+href="http://www.acm.org/sigcomm/sigcomm96/papers/mosberger.html"><em>Analysis
+of Techniques to Improve Protocol Latency</em></a>, D. Mosberger, L.L. Peterson,
+P.G. Bridges, S. O'Malley (Univ. of Arizona). ACM SIGOMM'96, vol. 26, no. 4,
+Palo Alto, CA, August, 1996.<br>
+</ul>
+This paper is a recent paper discussing protocol implementation issues.  It
+contains references to many other good paper on performance of networking
+protocols. In the same <a href="http://www.acm.org/sigcomm/sigcomm96/">
+SIGCOMM</a> you will find many more papers on performance of protocols.
+
+<p>If you are unfamiliar with the Internet protocols, you should read The Design
+Philoshophy of the DARPA Internet Procotols David D. Clark, Proceedings of the
+1988 SIGCOMM Symposium, pp 106-114, Stanford, CA, August 1988.  Another good
+paper is An Analysis of TCP Processing Overhead David D. Clark, Van Jacobson,
+John Romkey, and Howard Salwen, IEEE Communications Magazine, Vol. 27, No. 6,
+1989.<br>
+
+
+<h2>October 7</h2>
+<ul>
+<li>10. <a href="http://www.tns.lcs.mit.edu/publications/ccr96.html">Towards an
+Active Networks</a>, D. Tennenhouse and D. Wetherall, to appear in ACM SIGCOMM
+CCR.
+</ul>
+
+<p>This paper describes a radically-different architecture for structuring
+networks: protocols are replaced by programs.  As background reading you should
+read Architectural Considerations for a New Generation of Protocols, D.D. Clark
+and D.L. Tennenhouse, Proc. SIGCOMM 90 Symposium on Communications Architectures
+and Protocols, Philadelphia, PA, Sept. 1990, 200-208.<br>
+
+<h2>October 9</h2>
+
+<ul>
+<li>11. Efficient and Language-independent mobile programs", A. Adl-Tabatabai,
+G. Langdale, S. Lucco, and R. Wahbe.  PLDI'96, pp 127-136.
+</ul>
+
+<p>Another timely topic: mobile code.  A different approaches are explored to
+run code safely in another domain.  The destination domain can either be the
+kernel (as in SPIN, Exokernel, or Vino) or be another processor (as in Java and
+Omniware).  The different techniques used to ensure safety are sandboxing (ie.,
+software fault isolation), type-safe languages (SPIN and Java), and <a
+href="http://foxnet.cs.cmu.edu/people/petel/papers/osdi">self-certifying
+code</a>.
+
+<h2>October 16</h2>
+<ul>
+<li>12. Authentication in the Taos Operating System", by E. Wobber, M. Abadi,
+M. Burrows, and B. Lampson, ACM Trans. on Computer Systems, vol. 12, no 1,
+Feb. 1994, pp 2-32.
+</ul>
+
+<p>The papers in the previous class meeting demonstrate the need for security
+and discusses techniques.  This paper describes a complete design and
+implementation of security in a distributed system.  It uses authentication
+logic to reason about the security properties of the system.  Check out
+"Authentication in distributed systems: theory and practice" by Lampson et al.,
+ACM Trans. on Computer Systems, vol 10, no 4, Nov. 1992, pp 265-310 for the
+details on authentication logic.<br>
+
+
+<h2>October 21</h2>
+<ul>
+<li>13. A VMM security kernel for the VAX architecture", P. Karger, M. Zurko,
+D. Bonin, A. Mason, and C. Kahn, Proc. of the 1990 IEEE Symposium on Security
+and Privacy, 7-9 May 1990, Oakland, CA, pp 2-19.
+</ul>
+
+<p>This paper descibes what it takes to build an operating system capable of
+receiving an A1 rating.  The various ratings are described in the <a
+href="http://www.v-one.com/newpages/obook.html">Orange Book</a>.<br>
+
+
+<h2>October 23</h2>
+<ul>
+<li>14. <a href="http://cag-www.lcs.mit.edu/asplos7/">Petal: distributed virtual
+disks</a>, E. Lee and C. Thekkath, Seventh International Conference on Architectural
+Support for Programming Languages and Operating Systems (ASPLOS), Oct. 1-5,
+Cambridge, MA, pp. 84-92.
+</ul>
+
+<p>Petal is an ideal storage system with unlimited capacity, always available,
+and easy to manage.  Petal is an alternative to RAID: Randy H. Katz, Garth
+A. Gibson, and David A. Patterson. Disk system architectures for high
+performance computing. Proceedings of the IEEE 77, 12 (December, 1989) pages
+1842-1857.<br>
+
+<h2>October 28</h2>
+<ul>
+<li>15. Scalability in the XFS file system, Adam Sweeney, Proc. of the USENIX
+1996 Annual Technical Conference, San Diego, Jan. 1996.
+</ul>
+
+<p>The literature on file system is huge.  The XFS file system is a state-of-the
+art file system supporting large files, large number of files, large
+directories, and high performance I/O.  The background reading for this paper is
+Fast File System (FFS), McKusick, M. Joy, W. Leffler, S. Fabry, ACM Trans. on
+Computer Systems, Vol. 2, No. 3, Aug. 1984, pp. 181-197.<br>
+
+<h2>October 30</h2>
+
+<ul>
+<li>16. Serverless Network File Systems, T. Anderson, M. Dahlin, J. Neefe,
+D. Patterson, D. Roselli, and R. Wang, ACM Trans. on Computer Systems,
+vol. 14, no 1, Feb. 1996, pp. 41-79.
+</ul>
+
+<p>Serverless is a total misnomer, but the paper describes a radical approach to
+building distributed file systems.  The background reading for this paper is
+RAID (see above), LFS (Mendel Rosenblum and John K. Ousterhout. The design and
+implementation of a log-structured file system. Proceedings of the Thirteenth
+ACM Symposium on Operating Systems Principles, Pacific Grove, California October
+13-16, 1991, pages 1-15), and <a href="http://www.cs.arizona.edu/people/jhh/zebra_tocs.ps.gz">Zebra</a> (The Zebra Striped Network File System,
+J.K. Hartman and J.K. Ousterhout. Proceedings of the Fourteenth ACM Symposium on
+Operating System Principles, Asheville, California, pp.  29-43).  The prototype
+serveless file system is called xFS, not to be confused with XFS (see
+above). <br>
+
+<h2>November 4</h2>
+
+<ul>
+<li>17. Implementing global memory management in a workstation cluster,
+M.J. Feeley, W.E. Morgan, F.H. Pighin, A.R. Karlin, and H.M. Levy.  Proc.
+of the 15th Symp. on Operating System Principles, Dec. 1995, pp. 201-212.
+</ul>
+
+<p>This paper is the first of two paper on global memory management from the
+University of Washington.  The follow-on on this paper appeared last month at <a
+href="http://cag-www.lcs.mit.edu/asplos7/">ASPLOS</a> and discusses an
+optimization on the first paper.  The optimization involves sending subpages
+instead of sending complete pages.<br>
+
+<h2>November 6</h2>
+
+<ul>
+<li>18. Safe and efficient sharing of persistent objects in Thor. B. Liskov,
+A. Adya, M. Castro, M. Day, S. Ghemawat, R. Gruber, U. Maheshwari, A.C. Meyers,
+and L. Shrira. Proc. of the 1996 ACM Int. Conf. on Management of Data. June
+1996, pp. 318-329.
+</ul>
+
+<p>This paper presents a novel approach in the context of object-oriented
+databases on the many issues that showed in 6.853.  Check out <a
+href="http://www.thor.lcs.mit.edu/">Thor</a> for more information.<br>
+
+<h2>November 13</h2>
+
+<ul>
+<li>19. A Hierarchical Internet Object Cache.  A. Chankhunthod, D. Danzing,
+C. Neerdaels, M.F. Schwartz, and K.J. Worrell.  USENIX'96, Jan. 1996.<br>
+<li>20. Finding what people want: experiences with the
+WebCrawler. B. Pinkerton. 2nd Int. Conf. on WWWW. 1994, pp 821-829.<br>
+</ul>
+
+<p>The topic for November 13 is searching in the Internet.  A hot and fast
+moving area of research.  To cover some of the different issue two
+light-weight papers are assigned.  The first paper is one of the <a
+href="http://www.cs.colorado.edu/homes/schwartz/public_html/resource_location.html">Harvest</a>
+papers.  The other paper is one of the first papers on Web crawlers. Of
+course, you are encourages to check out other search tools, such as Alta
+Vista, Yahoo, etc.<br>
+
+<h2>November 18</h2>
+
+<ul>
+<li>21. Rover: a toolkit for mobile information access.  A.D. Joseph,
+A.F. deLespinasse, J.A. Tauber, D.K. Gifford, and M. Frans Kaashoek.  Proc.
+of the 15th SOSP, Dec. 1995.<br>
+</ul>
+
+<p>This is the first of two class meetings on mobile computing.  We will
+first take an application perspective on mobile computing by studying <a
+href="http://www.rover.lcs.mit.edu/">Rover</a>.  Rover was inspired and
+builds on pioneering work done at CMU on <a
+href="http://www.cs.cmu.edu/afs/cs/project/coda/Web/coda.html">Coda</a>, a
+file system for disconnected computing.  Mobile computing is a hot and
+growing research area; recently ACM started a new conference <a
+href="http://www.acm.org/sigmobile/conf/mobicom96/">Mobicom</a> on this
+topic.<br>
+
+<h2>November 20</h2>
+
+<ul>
+<li>22. <a
+href="ftp://www.cs.cmu.edu/~dbj/ftp/mobile/kluwer-ietf.ps">Scalable Support
+for Transparent Mobile Host Internetworking>, David B. Johnson, Ninth IEEE
+Workshop on Computer Communications, 1994. (revision) <br>
+</ul>
+
+<p>In this class meeting we will take a networking perspective on mobile
+computing.  In particular, we will focus on Mobile IP, a new protocol to
+make IP work when hosts are moving.  Mobile IP is in the process of being
+standarized by the <a
+href="http://www.ietf.org/html.charters/mobileip-charter.html">Mobile IP
+working group</a>.<br>
+
+<h2>November 25</h2>
+
+<ul>
+<li>23. <a href="http://cag-www.lcs.mit.edu/asplos7/program/">Shasta: A Low
+Overhead, Software-Only Approach for Supporting Fine-Grain Shared
+Memory</a>. Daniel J. Scales, Kourosh Gharachorloo: Digital WRL and
+Chandramohan A. Thekkath: Digital SRC.<br>
+</ul>
+
+<p>Early on the term we read about multiprocessors that provided
+distributed shared memory in hardware.  This paper reports on the latest
+advance in implementing distributed shared memory on software.  There are
+zillion of other papers on software distributed shared memory.  It is
+probably the most popular PhD. thesis topic in systems of the last decade.
+The Shasta work references many of these other projects; feel free to
+check them all out.<br>
+
+
+<h2>November 27</h2>
+<ul>
+<li>24. Network Objects. A. Birrell, G. Nelson, S. Owicki, E. Wobber.
+14th Symp. on Operating System Principles, pp. 217-230.<br>
+</ul>
+
+<p>A recent paper from DEC SRC on distributed network objects.  Most of the
+issue discussed in this paper appear are at the hart of other systems, such
+as distributed OLE-2 (or Active-X), Java's Remote Method Invocation
+package, CORBA, etc.  This paper is different from all the hype in that it
+gives a crisp and clear description of what the problems are, how these
+problems were solved, and what the performance issues are.<br>
+
+<h2>December 2</h2>
+<ul>
+<li>25. Fast, effective dynamic compilation.  J. Auslander, M. Philipose,
+G. Chaimbers, S.J. Eggers, and B.N. Bershad.  Proc. PLDI '96,
+pp. 149-158.<br>
+</ul>
+
+<p>Dynamic code generation is a recent popular topic.  This one of 3 papers
+that appeared at the last PLDI on this topic.<br>
+
+<h2>December 4</h2>
+<ul>
+<li>26. Receiver-driven layered multicast.  S. McCanne and V. Jacobson.
+SIGCOMM'96, pp. 117-130.<br>
+</ul>
+
+<p>A cool paper to make video conferencing over the Internet better.<br>

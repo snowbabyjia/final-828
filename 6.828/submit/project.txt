@@ -1,0 +1,6 @@
+6.828 submit has not been configured for fall14 yet.
+If you believe this to be in error, please send
+mail to 6.828-staff.  (If you *are* 6.828-staff, see
+/home/am0/6.828/README.)
+
+submit directory '/home/am0/6.828/fall14/submit' does not exist

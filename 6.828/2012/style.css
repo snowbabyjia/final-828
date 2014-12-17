@@ -1,0 +1,10 @@
+body { 
+  background-color: #ffffff; margin: 0 0 0 0; padding: 0 0 0 0; 
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+p { font-size: 13px; }
+ol { font-size: 13px; }
+ul { font-size: 13px; }
+pre { font-family: "courier new", courier, mono; color: #ca0a0a; font-size: 13px; }
+
